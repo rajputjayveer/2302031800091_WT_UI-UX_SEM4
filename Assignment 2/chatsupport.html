@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Support</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #027a48;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .home-icon {
+            font-size: 24px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            float: left;
+            padding: 20px;
+            background: white;
+            height: 50vh;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .sidebar h2 {
+            font-size: 22px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+
+        /* Chat Section */
+        .chat-section {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .chat-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .message img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .message-content {
+            background: #e6e6e6;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        .write-message {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .write-message input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .write-message button {
+            background: purple;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .footer {
+            background-color: #013220;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .footer-column {
+            width: 22%;
+            text-align: left;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #A8E6CF;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .app-links {
+            margin-top: 10px;
+        }
+
+        .app-links img {
+            width: 120px;
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html" class="home-icon">&#x1F3E0; Home</a>
+        <span><a href="profile.html"><img src="img/icons8-account-50.png" alt=""></a> </span>
+    </div>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h2>Messages</h2>
+            <ul>
+                <li>Threads</li>
+                <li>All DMs</li>
+                <li>Mentions & Reactions</li>
+                <li>More</li>
+            </ul>
+            <h3>Bots - 2</h3>
+            <ul>
+                <li>Jimmy (BOT)</li>
+                <li>Timmy (BOT)</li>
+            </ul>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <div class="chat-box">
+                <h2>All Inboxes</h2>
+
+                <!-- Chat Messages -->
+                <div class="message">
+                    <img src="img/pic (1).png" alt="User">
+                    <div class="message-content">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="message">
+                    <img src="img/pic (2).png" alt="User">
+                    <div class="message-content">Consectetur adipiscing elit.</div>
+                </div>
+                <div class="message">
+                    <img src="img/pic (4).png" alt="User">
+                    <div class="message-content">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="message">
+                    <img src="img/pic (1).png" alt="User">
+                    <div class="message-content">Consectetur adipiscing elit.</div>
+                </div>
+                <div class="message">
+                    <img src="img/pic (3).png" alt="User">
+                    <div class="message-content">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="message">
+                    <img src="img/icons8-account-50.png" alt="User">
+                    <div class="message-content">Consectetur adipiscing elit.</div>
+                </div>
+
+                <!-- Message Input Field -->
+                <div class="write-message">
+                    <input type="text" placeholder="Write a message...">
+                    <button>&#10148;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/46-463477_eco-friendly-image-green-earth-logo-vector 1.png" alt="Eco-Friendly Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.html">Contact Us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="privacy.html">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Shipping Policy</a></li>
+                        <li><a href="privacy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="img/icons8-pinterest-48.png" alt="Pinterest"></a>
+                        <a href="#"><img src="img/icons8-instagram-48.png" alt="instagram"></a>
+                        <a href="#"><img src="img/icons8-youtube-48.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Download Our App</h4>
+                    <div class="app-links">
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=L1ws9zn2uD01&format=png&color=000000"
+                                alt="Google Play"></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=bep_ZUj5TddJ&format=png&color=000000"
+                                alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 All Rights Reserved. This website is for demonstration purposes only.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

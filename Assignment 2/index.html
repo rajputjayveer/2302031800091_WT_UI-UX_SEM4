@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #e8f5e9;
+            background-image: url(img/Rectangle\ 74.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.9;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .features a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Trending Products */
+        .trending {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Categories Section */
+        .categories {
+            text-align: center;
+            padding: 40px;
+            background-color: #e0f2f1;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Membership Section */
+        .membership {
+            text-align: center;
+            padding: 30px;
+            background-color: #a5d6a7;
+        }
+
+        .membership button {
+            padding: 10px 20px;
+            background-color: #1b5e20;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .testimonial {
+            background-color: #c8e6c9;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #013220;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .footer-column {
+            width: 22%;
+            text-align: left;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #A8E6CF;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .app-links {
+            margin-top: 10px;
+        }
+
+        .app-links img {
+            width: 120px;
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">🌍 Eco Store</div>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="signup.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Neem Wood Toothbrush</h1>
+        <p>Eco-friendly and biodegradable toothbrush made from neem wood.</p>
+        <button>Choose Plastic Free</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div>✅ Free Shipping</div>
+        <div>🔒 Secure Payment</div>
+        <div>💰 100% Money Back</div>
+        <a href="chatsupport.html">
+            <div>📞 Online Support</div>
+        </a>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="img/White towel, bottles of shampoo and conditioner lie on a table with green leaf and aloe.png"
+                    alt="">
+                <p>Book the Himalayan Bathing Session - $10.49</p>
+            </div>
+            <div class="product">
+                <img src="img/Disposable environmentally friendly tableware. eco friendly disposable tableware. the concept of saving the planet, the rejection of plastic..png"
+                    alt="">
+                <p> Winter Glow Tea Sampler - $12.99</p>
+            </div>
+            <div class="product">
+                <img src="img/Spa cosmetics products on colored background.png" alt="">
+                <p>The Kitchen Towels | Black Tree Organic - $15.99</p>
+            </div>
+            <div class="product">
+                <img src="img/Bamboo toothbrushes and soap top view.png" alt="">
+                <p>Natural Bamboo Cutlery Set - $14.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Discover Zero Waste Essentials</h2>
+        <div class="category-list">
+            <a href="addcart.html">
+                <div class="category"><img src="img/Frame 210.png" alt=""></div>
+            </a>
+            <div class="category"><img src="img/Frame 211.png" alt=""></div>
+            <div class="category"><img src="img/Frame 212.png" alt=""></div>
+            <div class="category"><img src="img/Frame 210.png" alt=""></div>
+            <div class="category"><img src="img/Frame 211.png" alt=""></div>
+            <div class="category"><img src="img/Frame 212.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership">
+        <h3>Grab our Premium Membership</h3>
+        <p>Get flat 20% discount on every product</p>
+        <button>Get Now</button>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>We Care About Our Customers Too</h2>
+        <div class="testimonial">
+            <p>"Amazing eco-friendly products!" - Maria</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great quality and sustainable!" - Vikram</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/46-463477_eco-friendly-image-green-earth-logo-vector 1.png" alt="Eco-Friendly Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.html">Contact Us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="privacy.html">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Shipping Policy</a></li>
+                        <li><a href="privacy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jayveer-solanki-2461732ba/" target="_blank"><img src="img/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                        <a href="https://in.pinterest.com/" target="_blank"><img src="img/icons8-pinterest-48.png" alt="Pinterest"></a>
+                        <a href="https://www.instagram.com/jayveersinh_5351/" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="img/icons8-youtube-48.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Download Our App</h4>
+                    <div class="app-links">
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=L1ws9zn2uD01&format=png&color=000000"
+                                alt="Google Play"></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=bep_ZUj5TddJ&format=png&color=000000"
+                                alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 All Rights Reserved. This website is for demonstration purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

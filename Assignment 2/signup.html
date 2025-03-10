@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left side: Signup form -->
+        <div class="form-container">
+            <h2>Get Started Now</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms & policy</label>
+                </div>
+
+            </form>
+            <a href="home.html"><button type="submit" class="signup-btn">Signup</button></a>
+
+            <div class="alternative-login">
+                <p>Or</p>
+                <button class="google-btn">Sign in with Google</button>
+                <button class="apple-btn">Sign in with Apple</button>
+            </div>
+
+            <p class="login-link">Have an account? <a href="login.html">Log in</a></p>
+        </div>
+
+        <!-- Right side: Image -->
+        <div class="image-container">
+            <img src="img/tree.png" alt="" height="600px">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signupForm = document.querySelector("form");
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const termsCheckbox = document.getElementById("terms");
+            const signupButton = document.querySelector(".signup-btn");
+            const googleButton = document.querySelector(".google-btn");
+            const appleButton = document.querySelector(".apple-btn");
+    
+            // Form validation
+            signupButton.addEventListener("click", function (event) {
+                if (!nameInput.value || !emailInput.value || !passwordInput.value) {
+                    event.preventDefault();
+                    alert("Please fill in all fields.");
+                } else if (!termsCheckbox.checked) {
+                    event.preventDefault();
+                    alert("You must agree to the terms & policy.");
+                } else {
+                    alert("Signup successful!");
+                }
+            });
+    
+            // Button Click Effect
+            signupButton.addEventListener("mousedown", function () {
+                signupButton.style.transform = "scale(0.95)";
+            });
+    
+            signupButton.addEventListener("mouseup", function () {
+                signupButton.style.transform = "scale(1)";
+            });
+    
+            // Social Login Alerts
+            googleButton.addEventListener("click", function () {
+                alert("Google signup is currently unavailable.");
+            });
+    
+            appleButton.addEventListener("click", function () {
+                alert("Apple signup is currently unavailable.");
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
